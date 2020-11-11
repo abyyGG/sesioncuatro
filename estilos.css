@@ -1,0 +1,44 @@
+/* .features{
+    display:grid;
+   /*  grid-template-columns: 500px 1fr; cada elmento debe medir una fracion 
+    grid-template-columns: repeat(2fr,100%);
+    margin: 30px;
+}
+article{
+    /*background-color: teal;
+    margin: 10px;
+     width: 40%;
+    height: 70px; 
+    width:200px;
+    height:100px;
+}
+img{
+    width: 200px;
+    height: 100px;
+} */
+
+.item1{grid-area:header;}
+.item2{grid-area:menu;}
+.item3{grid-area:main;}
+.item4{grid-area:right;}
+.item5{grid-area:footer;}
+
+.grid-container{
+    display: grid;
+    grid-template-areas: 
+    'header header header header'
+    'main main right menu'
+    'footer footer footer footer'
+    ;
+    background-color: teal;
+    padding: 10px;
+    gap:10px;
+}
+
+.grid-container>div{
+    background-color: #eaeaea;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+    height:400px;
+}
